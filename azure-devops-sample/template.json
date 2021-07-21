@@ -18,11 +18,11 @@
       "properties": {
         "displayName": "test",
         "parameterValues": {
-          "accountName": "testforftpupload",
-          "accessKey": "8EsyuQjIf/7zFN+J3IALLFxCxy+/g9HuLoKVKPi5RN7vbu7sYKmM/Df1YZ5mt/hXb2gStWb/jppPB2SX0d/HuA=="
+          "accountName": "dracstorageoftools",
+          "accessKey": "ocerhC7GwtT40/jk613d8USzbqHvjd+BGKZ98Lc18u9G9fYB6tpVQgaEfIO5SmRp7haQwXo5eD80et6IqdbSjQ=="
         },
         "api": {
-          "id": "[concat('subscriptions/aafb27de-e728-4cb8-9e68-9afde1d1a849/providers/Microsoft.Web/locations/eastus/managedApis/azureblob', parameters('connections_azureblob_name'))]"
+          "id": "[concat('subscriptions/aafb27de-e728-4cb8-9e68-9afde1d1a849/providers/Microsoft.Web/locations/eastus/managedApis/', parameters('connections_azureblob_name'))]"
         }
       }
     }
