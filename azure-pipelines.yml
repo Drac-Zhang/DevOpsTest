@@ -9,7 +9,14 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-jobs:
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'yuzhang6-Microsoft Azure internal Consumption(aafb27de-e728-4cb8-9e68-9afde1d1a849)'
