@@ -7,5 +7,5 @@
     resourceGroupName: 'LogicAppStandard'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/Drac-Zhang/DevOpsTest/blob/master/azure-devops-sample/deploy/connectors-template.json'
+    csmFileLink: 'https://github.com/Azure/logicapps/blob/azuredevopsupdate/azure-devops-sample/deploy/connectors-template.json'
     deploymentMode: 'Incremental'
