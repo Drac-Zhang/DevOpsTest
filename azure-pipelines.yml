@@ -1,0 +1,30 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'yuzhang6-Microsoft Azure internal Consumption(aafb27de-e728-4cb8-9e68-9afde1d1a849)'
+    subscriptionId: 'aafb27de-e728-4cb8-9e68-9afde1d1a849'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'LogicAppStandard'
+    location: 'East US'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://github.com/Drac-Zhang/DevOpsTest/blob/master/azure-devops-sample/deploy/connectors-template.json'
+    deploymentMode: 'Incremental'
