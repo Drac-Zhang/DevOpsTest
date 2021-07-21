@@ -26,5 +26,6 @@ steps:
     resourceGroupName: 'LogicAppStandard'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/Drac-Zhang/DevOpsTest/blob/master/azure-devops-sample/deploy/connectors-template.json'
+    csmFileLink: 'https://github.com/Drac-Zhang/DevOpsTest/blob/master/azure-devops-sample/template.json'
+    csmParametersFileLink: 'https://github.com/Drac-Zhang/DevOpsTest/blob/master/azure-devops-sample/parameters.json'
     deploymentMode: 'Incremental'
