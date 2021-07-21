@@ -13,6 +13,5 @@ steps:
 - task: AzureCLI@1
   inputs:
     azureSubscription: 'yuzhang6-Microsoft Azure internal Consumption(aafb27de-e728-4cb8-9e68-9afde1d1a849)'
-    scriptType: 'ps'
     scriptLocation: 'inlineScript'
     inlineScript: 'az functionapp config appsettings set --name DracLogicAppStandard --resource-group LogicAppStandard --settings "BLOB_CONNECTION_RUNTIMEURL=Test"'
